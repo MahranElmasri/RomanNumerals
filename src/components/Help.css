@@ -1,0 +1,10 @@
+.help_text {
+  font-family: sans-serif;
+  background-color: ghostwhite;
+  font-size: 18px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+}

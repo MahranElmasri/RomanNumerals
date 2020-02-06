@@ -1,0 +1,9 @@
+nav {
+  display: flex;
+  font-size: 4em;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(79, 114, 114);
+  color: white;
+}
