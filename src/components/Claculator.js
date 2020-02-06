@@ -18,17 +18,17 @@ export default function Claculator() {
 
   function firstInputHandler(e) {
     firstInput = e.target.value;
-    setIsValid1(checkValidator(firstInput));
+    setIsValid1(checkValidator(firstInput.toUpperCase()));
     firstInput = isNaN(firstInput)
-      ? romanToDecimal(firstInput)
+      ? romanToDecimal(firstInput.toUpperCase())
       : Number(firstInput);
   }
 
   function secondInputHandler(e) {
     secondInput = e.target.value;
-    setIsValid2(checkValidator(secondInput));
+    setIsValid2(checkValidator(secondInput.toUpperCase()));
     secondInput = isNaN(secondInput)
-      ? romanToDecimal(secondInput)
+      ? romanToDecimal(secondInput.toUpperCase())
       : Number(secondInput);
   }
 
