@@ -12,7 +12,7 @@
 
 1. Clone the project.
 
-2. cd rouman_numeral calculator folder.
+2. cd RomanNumerals.
 
 3. run `npm install`
 
