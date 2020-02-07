@@ -1,15 +1,7 @@
 const calculator = {
-  add: (firstNum, secondNum) => {
-    return firstNum + secondNum;
-  },
-  sub: (firstNum, secondNum) => {
-    return firstNum - secondNum;
-  },
-  mul: (firstNum, secondNum) => {
-    return firstNum * secondNum;
-  },
-  div: (firstNum, secondNum) => {
-    return firstNum / secondNum;
-  }
+  add: (firstNum, secondNum) => firstNum + secondNum,
+  sub: (firstNum, secondNum) => firstNum - secondNum,
+  mul: (firstNum, secondNum) => firstNum * secondNum,
+  div: (firstNum, secondNum) => firstNum / secondNum
 };
 export default calculator;

@@ -15,7 +15,7 @@ describe("Test the decimal value between 1-10", () => {
   });
 });
 
-describe("Test the decimal value between 20-1000", () => {
+describe("Test the decimal value between 20-3000", () => {
   it("should return equvelant roman numeral value", () => {
     expect(decimalToRoman(20)).toBe("XX");
     expect(decimalToRoman(30)).toBe("XXX");
@@ -31,5 +31,7 @@ describe("Test the decimal value between 20-1000", () => {
     expect(decimalToRoman(400)).toBe("CD");
     expect(decimalToRoman(500)).toBe("D");
     expect(decimalToRoman(1000)).toBe("M");
+    expect(decimalToRoman(2000)).toBe("MM");
+    expect(decimalToRoman(3000)).toBe("MMM");
   });
 });

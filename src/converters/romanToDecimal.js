@@ -1,11 +1,11 @@
 export default function romanToDecimal(roman) {
   if (roman === null) return -1;
-  let num = char_to_int(roman.charAt(0));
+  let num = charToInt(roman.charAt(0));
   let pre, curr;
 
   for (let i = 1; i < roman.length; i++) {
-    curr = char_to_int(roman.charAt(i));
-    pre = char_to_int(roman.charAt(i - 1));
+    curr = charToInt(roman.charAt(i));
+    pre = charToInt(roman.charAt(i - 1));
     if (curr <= pre) {
       num += curr;
     } else {
@@ -16,8 +16,8 @@ export default function romanToDecimal(roman) {
   return num;
 }
 
-function char_to_int(c) {
-  switch (c) {
+function charToInt(char) {
+  switch (char) {
     case "I":
       return 1;
     case "V":

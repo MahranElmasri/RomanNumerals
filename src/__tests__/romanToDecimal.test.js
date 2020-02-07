@@ -1,7 +1,7 @@
 import romanToDecimal from "../converters/romanToDecimal";
 
-describe("Test the decimal value between 1-10", () => {
-  it("should return equvelant roman numeral value", () => {
+describe("Test the roman numeral value between I-X", () => {
+  it("should return equvelant decimal value", () => {
     expect(romanToDecimal("I")).toBe(1);
     expect(romanToDecimal("II")).toBe(2);
     expect(romanToDecimal("III")).toBe(3);
@@ -15,8 +15,8 @@ describe("Test the decimal value between 1-10", () => {
   });
 });
 
-describe("Test the decimal value between 20-1000", () => {
-  it("should return equvelant roman numeral value", () => {
+describe("Test the roman numeral value between XX-MMM", () => {
+  it("should return equvelant decimal value", () => {
     expect(romanToDecimal("XX")).toBe(20);
     expect(romanToDecimal("XXX")).toBe(30);
     expect(romanToDecimal("XL")).toBe(40);
@@ -26,6 +26,16 @@ describe("Test the decimal value between 20-1000", () => {
     expect(romanToDecimal("LXXX")).toBe(80);
     expect(romanToDecimal("XC")).toBe(90);
     expect(romanToDecimal("C")).toBe(100);
+    expect(romanToDecimal("CC")).toBe(200);
+    expect(romanToDecimal("CCC")).toBe(300);
+    expect(romanToDecimal("CD")).toBe(400);
+    expect(romanToDecimal("D")).toBe(500);
+    expect(romanToDecimal("DC")).toBe(600);
+    expect(romanToDecimal("DCC")).toBe(700);
+    expect(romanToDecimal("DCCC")).toBe(800);
+    expect(romanToDecimal("CM")).toBe(900);
     expect(romanToDecimal("M")).toBe(1000);
+    expect(romanToDecimal("MM")).toBe(2000);
+    expect(romanToDecimal("MMM")).toBe(3000);
   });
 });
