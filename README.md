@@ -2,24 +2,24 @@
 
 ![here](http://g.recordit.co/Q09tWXT69U.gif)
 
-## dependancies
+## Dependancies
 
 - Node
 
-- npm
+- Npm
 
 ## Installation
 
 1. Clone the project.
 
-2. cd RomanNumerals.
+2. Cd RomanNumerals.
 
-3. run `npm install`
+3. Run `npm install`
 
 ## Development
 
-1. run `npm start`
+1. Run `npm start`
 
 ## Testing
 
-1. run `npm test`
+1. Run `npm test`
